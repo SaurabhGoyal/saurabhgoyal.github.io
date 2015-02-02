@@ -1,31 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="vendors/jquery.easings.min.js"></script>
-    <script type="text/javascript" src="jquery.fullPage.js"></script>
-
-    <script type="text/javascript">
-        $(document).ready(function() {
-        	$('#fullpage').fullpage({
-        	    sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke']
-        	});
-        });
-    </script>
-    
-    <title> Saurabh Goyal : Github </title>
+	<title>Saurabh Goyal</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="css/scrolling-nav.css" rel="stylesheet" type="text/css">
+	<script src="js/jquery.js"> </script>
+	<script src="js/bootstrap.min.js"> </script>
+    <script src="js/jquery.easing.min.js"> </script>
+	<script src="js/scrolling-nav.js"> </script>
 </head>
 
-<body>
-    <div id="fullpage">
-        <div class="section">Welcome to the codebase of saurabh goyal</div>
-        <div class="section">
-            <div class="slide">Section 2 Slide 1</div>
-            <div class="slide">Section 2 Slide 2</div>
-            <div class="slide">Section 2 Slide 3</div>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">~ Saurabh Goyal</a>
+            </div>
+
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#work">What do I do</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="section">Section 3</div>
-    </div>            
-</body> 
+    </nav>
+    
+    <section id="intro" class="intro-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Saurabh Goyal</h1>
+                    I dare to code, sometimes.
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+	
+    </body>
+
 </html>

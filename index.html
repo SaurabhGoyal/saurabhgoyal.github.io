@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
-<script src="jquery.min.js"></script>
-<script type="text/javascript" src="jquery.fullPage.min.js"></script>
-<script type="text/javascript">
-	$(function() {
-		$('#fullpage').fullpage();
-	});
-</script>
-<title>Saurabh Goyal Github Page</title>
+    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="vendors/jquery.easings.min.js"></script>
+    <script type="text/javascript" src="jquery.fullPage.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage();
+        });
+    </script>
+    
+    <title> Saurabh Goyal : Github </title>
 </head>
+
 <body>
-	Welcome to the code-base of saurabh-goyal
-	<div id="fullpage">
-		<div class="section">sec1</div>
-		<div class="section">sec2</div>
-		<div class="section">sec3</div>
-		<div class="section">sec4</div>
-		<div class="section">sec5</div>
-	</div>
-</body>
+    <div id="fullpage">
+        <div class="section">Welcome to the codebase of saurabh goyal</div>
+        <div class="section">
+            <div class="slide">Section 2 Slide 1</div>
+            <div class="slide">Section 2 Slide 2</div>
+            <div class="slide">Section 2 Slide 3</div>
+        </div>
+        <div class="section">Section 3</div>
+    </div>            
+</body> 
 </html>

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Starting with the blog!"
-date:   2017-01-06 15:48:07 +0530
+date:   2017-07-12 15:48:07 +0530
 categories: tech-blog
 ---
 Today, I am starting with my technical blog. The posts will be a weekly thing (*hopefully*) where I'll pour out all my week's knowledge so that both mine and others' time is put to full use.

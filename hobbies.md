@@ -6,7 +6,10 @@ permalink: /hobbies/
 ---
 
 I like-
-- **Comedy -** Fascinated by stand-up comedy community in India.
-- **Swimming -** One of the most interesting and relaxing things for me.
-- **Anime -** Some of the crucial life lessons are best described in animated tv-shows.
-- **Reading -** Read specially while travelling/commuting.
+* **Comedy -** Fascinated by stand-up comedy community in India.
+
+* **Swimming -** One of the most interesting and relaxing things for me.
+
+* **Anime -** Some of the crucial life lessons are best described in animated tv-shows.
+
+* **Reading -** Read specially while travelling/commuting.

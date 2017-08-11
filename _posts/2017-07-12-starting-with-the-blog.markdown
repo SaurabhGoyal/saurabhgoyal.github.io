@@ -9,4 +9,4 @@ Today, I am starting with my technical blog. The posts will be a weekly thing (*
 My posts will vary from a particular web development framework to coding practices to project management and even feature delivery. I am no expert, but will get there.
 
 I am starting this with following quote in mind-
->“If I fail more than you do, I win.” — Seth Godin
+>If I fail more than you do, I win. — <cite>Seth Godin<cite>

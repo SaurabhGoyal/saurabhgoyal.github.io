@@ -7,7 +7,7 @@ categories: tech-blog
 I have been more and more involved in tasks such as deployment and server management recently and I am still struggling through the nuts and bolts of the whole process from pushing the changes in the repository to deploying those and making sure that each resource in the infrastructure has successfully started running with the new changes.
 
 When going through our deployment scripts and resources the other day, this question popped up in my head.
->“How do we manage our sensitive info in the project?”
+>How do we manage our sensitive info in the project?
 
 The sensitive info that consists of any of the below and more-
 * ```API tokens``` to third party services. (such as Google APIs, Twilio etc.)
@@ -30,7 +30,7 @@ All your sensitive info is off the code-base, secured to one or more authorized 
 
 That is to say, **the offline method is not scalable**. When above happens and there are multiple versions of configuration files, you need to find a way to store them securely and manage them better, also making sure their availability and integrity. You can't keep all those offline anymore.
 
-# The intuitive and probably the best option is to put them in a private secure location and whenever instantiating the app, all data is pulled from there.
+## The intuitive and probably the best option is to put them in a private secure location (accessible only be authorized personnels such as devops engineers) and whenever instantiating the app, all data is pulled from there.
 * The locations can be places like a ```repository``` or ```AWS S3 bucket``` or any of the multiple available services to store sensitive data (```PassPack, Swordfish, CHEF server``` etc.). In any case, **we must always store encrypted data to those places and decrypt before using at our end to ensure security even if data from that location is compromised.**
 
 * Although, in that case you'll have to provide keys/credentials to fetch the data from that secure location. But this is not same as before because we have successfully abstracted all sensitive data, which may increase a lot, behind one secure location/service, size of credentials to which is and will always be fixed.
@@ -43,9 +43,13 @@ The above is the basic idea on how to automate deployment and configuration of o
 
 * Now whenever deploying, all that is needed by the script are AWS keys for fetching file from S3 and the password/key for decrypting that file.
 
+**Note:-**
+
+__*A repository is better in terms of modification and history management of sensitive data itself, which is not fully available with S3. The benefit mainly comes when you have lots and lots of sensitive data and multiple DevOps engineers who may be making changes to same key/s simultaneously. Although this is improbable in most projects.*__
+
 ---
 
-Now let's discuss what I wrote earlier - **Committing any sensitive data to version control system is big mistake.**
+Now let's discuss what I wrote earlier - **Committing any sensitive data to version control system is a big mistake.**
 Because-
 
 * The sensitive data is in the history even after moving out. Proper removal will require-

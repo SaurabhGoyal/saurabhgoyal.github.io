@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "NoSQL database"
+subtitle: Fundamentals and difference with Relational DB.
+date:   2017-08-05 13:42:07 +0530
+categories: tech-blog
+---
+
+NoSQL - non SQL.
+
+---
+References:-
+* [Digital Ocean AMQP](https://www.digitalocean.com/community/tutorials/an-advanced-message-queuing-protocol-amqp-walkthrough){:target="_blank"}
+* [RabbitMQ Tutorial](https://www.rabbitmq.com/tutorials/tutorial-one-python.html){:target="_blank"}

@@ -21,7 +21,13 @@ Now when we have decided to schedule a task, we need a protocol (a set of rules 
 
 * One or more consumers which consume messages.
 
-`` Hence AMQP.``
+There are two popular patterns for achieving above-
+
+* ```Publisher Subscriber``` - Publishers directly publish messages to the pre-decided subscribers.
+
+* ```Message Queue``` - Publishers add message to a queue and subscribers consume that queue.
+
+The queue pattern is what's used mostly because of it's flexibility. Technically all the interaction happens using AMQP so let's discuss that.
 
 ---
 
@@ -56,7 +62,7 @@ Followings are the benefits of AMQP which also explains why such a protocol was 
 
 AMQP Solution-
 ---
-What AMQP provides is a basic contract that ensures certain way of interaction among publishers and consumers. Another main part of solution is a common ground/a service/a server/a middleman that takes all the messages from publishers and manages them and let consumers consume them as and when they are available. This middleman is called ```Broker```. This may sound simple but, the whole benefit of message reliability, interoperability between all kinds of resources because of common standard, scalability in terms of messages, publishers and consumers and the dependency removal between publishers and consumers is all that AMQP brings to the plate.
+What AMQP provides is a basic contract that ensures certain way of interaction among publishers and consumers. Another main part of solution is a common ground/a service/a server/a middleman that takes all the messages from publishers and manages them and let consumers consume them as and when they are available. This middleman is called ```Message Broker``` as mentioned earlier. This may sound simple but, the whole benefit of message reliability, interoperability between all kinds of resources because of common standard, scalability in terms of messages, publishers and consumers and the dependency removal between publishers and consumers is all that AMQP brings to the plate.
 
 ![AMQP Model-1]({{ site.url }}/assets/images/The-amqp-model-for-wikipedia.svg)
 *<sub><sup>https://commons.wikimedia.org/wiki/File:The-amqp-model-for-wikipedia.svg</sup></sub>*

@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Starting with the blog!"
+subtitle: ":pray:"
 date:   2017-07-12 15:48:07 +0530
 categories: tech-blog
 ---

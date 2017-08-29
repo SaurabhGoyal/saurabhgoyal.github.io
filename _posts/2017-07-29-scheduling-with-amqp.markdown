@@ -36,7 +36,7 @@ There are two popular patterns for achieving above-
 
 * ```Message Queue``` - Publishers add message to a queue and subscribers consume that queue.
 
-The queue pattern is what's used mostly because of it's flexibility. Message queuing uses one popular protocol - AMQP. In above steps, all the interaction happens using AMQP so let's discuss that.
+The queue pattern is what's used mostly because of it's flexibility. Message queuing uses following popular protocols - AMQP, MQTT etc. In above steps, all the interaction happens using AMQP so let's discuss that.
 
 ---
 

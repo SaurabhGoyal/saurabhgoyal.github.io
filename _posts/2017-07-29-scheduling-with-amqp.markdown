@@ -19,7 +19,7 @@ Now when we have decided to schedule a task, we need a protocol (a set of rules 
 ``If you are wondering why a separate protocol, let me just clarify here, a protocol is nothing but a refined version of whole or parts of one or more other protocols customized for one specific purpose.``
 
 Now that you have the message and a protocol to send it, what's missing? `Consistency` and `Reliability`. To explain better-
-* Are we sure our message will not be damaged/altered in a ny way before the person gets it?
+* Are we sure our message will not be damaged/altered in any way before the person gets it?
 
 * Are we sure our message will reach the intended person?
 

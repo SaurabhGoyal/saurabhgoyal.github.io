@@ -7,14 +7,23 @@ categories: tech-blog
 ---
 Nothing solidifies your learning about a topic more than explaining it to a dummy who is totally un-familiar with the topic. I tried learning about scheduling tasks in a web application that we have been using in a project but could not get far. I tried it again recently and it seems I have something that I can share.
 
-`First of all, the concept of scheduling a task is not limited to web applications. It can be used anywhere in any context. Basic concept is that there is a work at hand and there is some task related to that work. Few situations when scheduling the task may be needed instead of doing right away are -`
+`To begin with, the concept of scheduling a task is not limited to web applications. It can be used anywhere in any context. Basic concept is that there is a work at hand and there is some task related to that work. Few situations when scheduling the task may be needed instead of doing right away are -`
 * When the task is not to be done now because of lower priority, un-availability of required resource, complexity of task, cost of running the task, ```priority of the main work at hand``` or various other reasons. Then you schedule that task to be done ```later```.
 
 * When the task is to be distributed to one or more other people who'll do it. You need a common platform to communicate about the task to them. You schedule that task to be ```queued``` in their list of work.
 
 * When the task is to be repeated at a certain frequency such as daily or weekly. You schedule that task to be run ```periodically```.
 
-Now when we have decided to schedule a task, we need a protocol (a set of rules or a contract) to do that in efficient and inter-operable way in machines (read- computers). At it's core, a task is nothing but a set of instructions to be performed on a particular data set. So scheduling just boils down to simple idea of __*Message Queuing*__ where there are-
+Now when we have decided to schedule a task, we need a protocol (a set of rules or a contract) to do that in efficient and inter-operable way in machines (read- computers). At it's core, a task is nothing but a set of instructions to be performed on a particular data set. That is the data you need to pass to schedule a task. The combined data can be called a `Message` which is passed from the scheduler to whoever will perform that task. The protocol used for all that is called `Messaging Protocol`. One of the most common messaging protocol that we use or rather did use in our daily lives is post office service, where we have to provide destination, source, add required stamps and enclose the contents in a wrapper for the messaging to be completed. In computers, one such protocol is SMTP (Simple Mail Transfer Protocol), which powers the email service.
+
+``If you are wondering why a separate protocol, let me just clarify here, a protocol is nothing but a refined version of whole or parts of one or more other protocols customized for one specific purpose.``
+
+Now that you have the message and a protocol to send it, what's missing? `Consistency` and `Reliability`. To explain better-
+* Are we sure our message will not be damaged/altered in a ny way before the person gets it?
+
+* Are we sure our message will reach the intended person?
+
+For the above, one good approach is queuing the messages to prevent losses. Currently scheduling has become synonymous to __*Message Queuing*__ where there are-
 * Messages to be delivered which consist of the task to be performed and the data on which it's to be performed.
 
 * One or more publishers that produce messages and
@@ -27,7 +36,7 @@ There are two popular patterns for achieving above-
 
 * ```Message Queue``` - Publishers add message to a queue and subscribers consume that queue.
 
-The queue pattern is what's used mostly because of it's flexibility. Technically all the interaction happens using AMQP so let's discuss that.
+The queue pattern is what's used mostly because of it's flexibility. Message queuing uses one popular protocol - AMQP. In above steps, all the interaction happens using AMQP so let's discuss that.
 
 ---
 

@@ -14,6 +14,17 @@ Sr. Backend Developer for [\[b.well\]](https://www.icanbwell.com/){:target="_bla
 
     * Plethora of features developed by combining in-house built and multiple third party services.
 
+- __*MarkMe [25-Aug-2017]*__ -
+\[Check on Github\] [Sender](https://github.com/joshtechnologygroup/MarkMe-Sender), [Receiver](https://github.com/joshtechnologygroup/MarkMe-Receiver)
+\\
+Under Hackathon at my organization, developed an open-source attendance system that uses data-transmission-over-sound technology to mark entries.
+
+    * No other channel (internet, bluetooth, radio waves etc.) required since data transmission happens over sound.
+
+    * Transmission can be done over both audible and in-audible sound.
+
+    * Used [Chirp SDK](chirp.io) for data encoding and decoding.
+
 ---
 
 Some of the works I have done earlier are -

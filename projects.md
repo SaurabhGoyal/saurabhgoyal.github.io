@@ -7,6 +7,12 @@ permalink: /projects/
 ---
 Currently I am putting my time into followings -
 
+- __*TicTacToe-Chat [2018]*__ [\[details\]](/projects/tictactoe-chat/overview){:target="_blank"} -
+
+    * A simple TicTacToe game that can be played on chat through text or voice input over various platforms such as Google-Assistant, Facebook-Messenger etc..
+
+    * The game logic uses alpha-beta pruning alongw-ith result caching to speed things up.
+
 - __*B.Well [2015-]*__ -
 Sr. Backend Developer for [\[b.well\]](https://www.icanbwell.com/){:target="_blank"}
 

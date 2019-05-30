@@ -12,9 +12,10 @@ author:
   github: saurabhgoyal
   twitter: stableasadrop
   stack-overflow: 2555504
-  # disqus: your_disqus_forum_shortname
+  disqus:
+    short_name: saurabhgoyal
 
-# google_analytics: 'UA-XXXXXXXX-X'
+google_analytics: 'UA-105262299-1'
 
 # Syntax highlighting
 highlightstyle: ''

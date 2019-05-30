@@ -5,6 +5,12 @@
         {% include meta_tags/sharing.html %}
 
         {% include externals/styling.html %}
+        <!--Add any custom styling mentioned in layout-->
+        {% if layout.style %}
+             <style type="text/css">
+                 {{ layout.style }}
+             </style>
+        {% endif %}
     </head>
 
     <body>
@@ -16,6 +22,5 @@
 
         {% include externals/scripting.html %}
         {% include externals/google_analytics.html %}
-        {% include externals/disqus.html %}
     </body>
 </html>

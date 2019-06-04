@@ -13,3 +13,5 @@ I like-
 * **Anime -** Some of the crucial life lessons are best described in animated tv-shows.
 
 * **Reading -** Read specially while travelling/commuting.
+
+<!--* **Guitar -** Struggling to learn this since couple of months, not getting any better :p.-->

@@ -2,7 +2,7 @@
 layout: post
 title:  "[Level-Up-Series] Program in Assembly"
 subtitle: Write a basic program in assembly language.
-date:   2019-06-02 21:18:07 +0530
+date:   2019-06-04 16:26:07 +0530
 categories: tech-blog
 tags: level up, 10x developer, programmer achievements, assembly, low level languages, assembler, compiler, interpreter
 ---
@@ -43,16 +43,23 @@ We'll discuss what are these, why they were needed, how things started, what sho
     * Bytecode provided an ease of sharing the program without sharing the source code which provided some kind of abstraction.
 
     COBOL was the first language to start with this concept and it made writing and sharing programs extremely simple.
+![compiler-interpreter]({{ site.url }}/assets/images/com-asm-int-comp-int.png)
 
 * In interpretation process, a major optimization method was introduced, it's called **JIT (Just-In-Time) Complilation**. What it does is that when interpreter is going line by line and translating to machine code, it also feeds the lines to a module called JIT-compiler which starts finding duplicate lines, complex set of lines and other types of instructions which can be optimized on and keeps storing their machine code translations for future usage. With the collected insight and data, it saves repeated translation of multiple lines of intermediate-code to machine code by interpreter. All this happens on the fly as and when lines come, hence Just-In-Time. It creates a significant positive impact in performance.
 
-Needless to mention that in reality there are much more intricate details about each point mentioned here, I have just tried to give an overview of all three things.
+Needless to mention that in reality there are much more intricate details about each point mentioned above, I have just tried to give an overview of all three things.
 
 ----
 
 Popular Implementations for Languages
 -------------------------------------
 After going through above, one thing we need to understand is that languages are not compiled or interpreted, it's the implementation of their translator which takes such approaches. A language may have one or more translators using different approaches. We'll go through some popular implementations (translators)-
+
+- **JAVA**
+
+    - Implemented in C, It has two components - JAVAC, working as compiler and JVM, working as (interpreter + JIT compiler)
+    - JAVAC compiles the source code (.java) into bytecode (.class)
+    - Then bytecode is interpreted into machine code line by line by platform specific JVM which acts as interpreter while applying JIT compilation.
 
 - **Python**
 
@@ -83,12 +90,6 @@ After going through above, one thing we need to understand is that languages are
         - Compiles the source code (.py) directly to machine code
         - Provides access to full .Net library.
 
-- **JAVA**
-
-    - Implemented in C, It has two components - JAVAC, working as compiler and JVM, working as (interpreter + JIT compiler)
-    - JAVAC compiles the source code (.java) into bytecode (.class)
-    - Then bytecode is interpreted into machine code line by line by platform specific JVM while applying JIT compilation.
-
 - **C**
 
     - Original - I don't know the exact name of C's original compiler.
@@ -108,17 +109,17 @@ Registers and Memory
 --------------------
 Before we go into the Assembly language itself, There are couple of things I would like to clarify -
 
-- **Physical form of Memory** - In terms of memory, the smallest data unit is **bit** which is either 0 or 1 so basically we want to have two states possible in our memory system to identify whether it has 0 or 1. In earlier time, Magnetic tapes were used which are made of tiny magnetic particles and there can be two states of direction of magnetic charge in those particles, thus providing 0 or 1. Later on logical gates (Physical form of boolean functions) were used which when structured in a particular way such as [AND-OR-LATCH, Gated Latch](https://en.wikipedia.org/wiki/Flip-flop_(electronics)){:target="_blank"} become **stateful**, i.e. can store a bit of memory. I highly recommend checking out [this video](https://www.youtube.com/watch?v=RU1u-js7db8){:target="_blank"}, It explains Memory in detail and amazingly simple manner.
-  Since we have a mechanism of building 1 bit memory, we now want to have more of that, depending on the implementation, we will have some abstract blocks of memory, which are then combined in forms of grids of grids of grids and so on thus achieving such high amount of memory that we see today. A 1 GB RAM stick actually has ~1 Billion physical memory blocks to store that many bits data.
+- **Physical form of Memory** - In terms of memory, the smallest data unit is **bit** which is either 0 or 1 so basically we want to have two states possible in our memory system to identify whether it has 0 or 1. In earlier time, Magnetic tapes were used which are made of tiny magnetic particles and there can be two states of direction of magnetic charge in those particles, thus providing 0 or 1. Later on, logical gates (Physical form of boolean functions) were used which when structured in a particular way such as [Gated Latch](https://en.wikipedia.org/wiki/Flip-flop_(electronics)){:target="_blank"} become **stateful**, i.e. can store a bit of memory. I highly recommend checking out [this video](https://www.youtube.com/watch?v=RU1u-js7db8){:target="_blank"}, It explains Memory in detail and amazingly simple manner.
+  After having a mechanism of building 1 bit memory, next requirement was to have more of that, considering 1 bit memory system as abstract memory blocks, such blocks were then combined in forms of grids of grids of grids and so on thus achieving such high amount of memory that we see today. A 1 GB RAM stick actually has ~1 Billion physical memory blocks to store that many bits data, it's amazing how technology has grown to be able to do that in extremely small spaces.
 
-- **Registers** - For efficient usage, access and writes on memory by processor, processors generally have very small amount of their own memory, this is called Registers. They are used by processor to hold instructions, data to perform instruction on and multiple other things. The registers have a digital representation also which provide a virtual abstraction between actual memory and their representation in programs, these registers are referenced in programs instead of individual memory addresses.
+- **Registers** - For efficient usage, access and writes on memory by processor, processors generally have very small amount of their own memory, called Registers. They are used by processor to hold instructions, data to perform instruction on and multiple other things. The registers have a digital representation also which provide a virtual abstraction between actual memory and their representation in programs, these registers are referenced in programs instead of individual memory addresses.
 
 ----
 
 Assembly Language
 -----------------
 
-Finally we are here! As we already know now, Assembly is a low level language created to provide an abstraction to programmers from machine code. In current time, Assembly is used when program needs to interact with low level components such as OS, Processor, BIOS. Being low level, it's much faster than other high level languages, hence it's another major usage is in time critical jobs.
+Finally we are here! As we already know now, Assembly is a low level language created to provide an abstraction to programmers from machine code. In current time, Assembly is used when program needs to interact with low level components such as OS, Processor and BIOS. Being low level, it's much faster than other high level languages, hence it's another major usage is in time critical jobs.
 
 Below, I have given a very high level view of the language, it's not a tutorial at all, for detailed tutorial, check out the links given in references section.
 
@@ -167,6 +168,8 @@ Conclusion
 - The whole experiment along with this post took ~4 days.
 
 - My favourite part of this experiment was definitely reading about compilers and interpreters.
+
+- Checkout other posts from level-up series [here]({% post_url 2019-05-30-levelling-up-as-developer %}).
 
 ----
 

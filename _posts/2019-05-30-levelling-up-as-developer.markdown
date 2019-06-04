@@ -33,4 +33,4 @@ Achievements
 ---
 *1. **Write a program in assembly language (June 2nd, 2019)** -
 
-So the basic idea was to write any small program in Assembly, but while doing that I learned a lot of the other things. [Check this post for detailed information on this]({% post_url 2019-06-02-program-in-assembly %}).
+So the basic idea was to write any small program in Assembly, but while doing that I learned a lot of the other things. [Check this post for detailed information on this]({% post_url 2019-06-04-program-in-assembly %}).

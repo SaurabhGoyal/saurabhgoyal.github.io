@@ -3,7 +3,7 @@ layout: post
 title:  "Levelling up as a developer"
 subtitle: How do you level up, how do you even measure it?
 date:   2019-05-30 08:18:07 +0530
-categories: tech-blog
+categories: 10x-dev
 tags: level up, 10x developer, programmer achievements
 ---
 Most programmers/developers, if not all, have a hunch to up their game, to level up in their skills and to be considered among the good programmers out there, unfortunately not everyone is sure what path to take and more importantly how to even measure their skills. Data structures, algorithms, system design, tech stack knowledge and experience are the industry standard right now but they are not quite measurable and do not provide users with trackable objectives to complete.

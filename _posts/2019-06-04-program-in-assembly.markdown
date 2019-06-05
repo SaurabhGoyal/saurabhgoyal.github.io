@@ -3,7 +3,7 @@ layout: post
 title:  "[Level-Up-Series] Program in Assembly"
 subtitle: Write a basic program in assembly language.
 date:   2019-06-04 16:26:07 +0530
-categories: tech-blog
+categories: 10x-dev
 tags: level up, 10x developer, programmer achievements, assembly, low level languages, assembler, compiler, interpreter
 ---
 

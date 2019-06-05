@@ -3,7 +3,7 @@ layout: post
 title:  "Sensitive info in the project!"
 subtitle: Are your AWS keys public?
 date:   2017-07-19 22:48:07 +0530
-categories: tech-blog
+categories: engineering
 ---
 I have been more and more involved in tasks such as deployment and server management recently and I am still struggling through the nuts and bolts of the whole process from pushing the changes in the repository to deploying those and making sure that each resource in the infrastructure has successfully started running with the new changes.
 

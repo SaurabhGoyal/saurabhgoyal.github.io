@@ -3,7 +3,7 @@ layout: post
 title:  "Scheduling a task - for dummies"
 subtitle: A high level view of why and how of scheduling
 date:   2017-07-29 23:18:07 +0530
-categories: tech-blog
+categories: engineering
 ---
 What -
 ===

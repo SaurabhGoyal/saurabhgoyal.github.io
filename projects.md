@@ -4,16 +4,37 @@ title: What I Work On
 subtitle: Motivation of my work is generally automation of a regular task, learning a new concept or experiencing something fun.
 permalink: /projects/
 ---
----
-Currently I am putting my time into followings -
+----
+
+Current
+-------
+
+- __*Level-up Series [2019]*__ [\[Details\]]({% post_url 2019-05-30-levelling-up-as-developer %}){:target="_blank"}
+
+    * A set of experiments that any programmer can try to complete and learn from them. This is a program to get you going towards learning by doing and avoiding the path of `paralysis by analysis`.
+
+    * Check the [list of experiments here](https://gist.github.com/SaurabhGoyal/5f911bbef0dd5f11aaf7e8a5f7be1399).
+
+
+- __*Healthifyme [2018-]*__ -
+Sr. Backend Developer for [\[Healthifyme\]](https://www.healthifyme.com/){:target="_blank"}
+
+    * A calorie tracker app that provides customized diet plan and workout plans along-with reports and insights.
+
+    * Here I have worked on Feeds, Q&A, Reports, GDPR, Comm-service and many internal features as well.
 
 - __*TicTacToe-Chat [2018]*__ [\[details\]](/projects/tictactoe-chat/overview){:target="_blank"} -
 
     * A simple TicTacToe game that can be played on chat through text or voice input over various platforms such as Google-Assistant, Facebook-Messenger etc..
 
-    * The game logic uses alpha-beta pruning alongw-ith result caching to speed things up.
+    * The game logic uses alpha-beta pruning along-with result caching to speed things up.
 
-- __*B.Well [2015-]*__ -
+----
+
+Previous
+---
+
+- __*B.Well [2015-2018]*__ -
 Sr. Backend Developer for [\[b.well\]](https://www.icanbwell.com/){:target="_blank"}
 
     * Comprehensive Health Assistance App. Brings all aspects of a person's health to a single place.
@@ -30,10 +51,6 @@ An open-source attendance system that uses data-transmission-over-sound technolo
     * Transmission can be done over both audible and in-audible sound.
 
     * Used [Chirp SDK](chirp.io) for data encoding and decoding.
-
----
-
-Some of the works I have done earlier are -
 
 - __*Movie Review Opinion Mining [2015]*__ -
 [\[Check on Github\]](https://github.com/SaurabhGoyal/MovieReview-OpinionMining)
